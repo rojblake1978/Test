@@ -1,0 +1,150 @@
+ 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index:2 ;
+}
+
+.logo {
+  margin-left: 40px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0px;
+  left: 10px;
+}
+
+.logo img {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: -30px;/* direction of logo left right + or - */
+  height: 50px; /* adjust the height as desired */
+}
+
+nav {
+ margin-left: 20px;
+ width: 100%;
+ z-index: 3;
+ position: absolute;
+ top: 0;
+ left: -40px;
+}
+
+nav ul {
+ list-style: none;
+ display: flex;
+ justify-content: flex-end;
+ align-items: center;
+ margin: 0;
+ padding: 20px;
+ font-family: sans-serif;
+}
+
+nav ul li {
+ margin-left: 20px;
+}
+
+nav ul li a {
+ color: #fff;
+ text-decoration: none;
+ font-size: 16px;
+}
+
+@media (max-width: 768px) {
+ nav {
+   display: flex;
+   justify-content: flex-end;
+   margin-right: 20px;
+ }
+
+ nav ul {
+   flex-direction: column;
+ }
+
+ nav ul li {
+   margin: 10px 0;
+ }
+}
+
+#Contact {
+  background-color: red;
+  font-family: sans-serif;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+
+}
+body{
+  background-color: black;
+}
+.card{
+  background: #fff;
+  width: 290px;
+  height: 575px;
+  margin: 20px;
+  border-radius: 20px;
+  margin-top: 150px;
+  margin-bottom: 600px;  /* adjusts size at the bottom of the section*/
+}
+
+
+.card-image{
+  background-color: darkorange;
+  height: 500px;
+  margin-bottom: 15px;
+  background-size: cover;
+  border-radius: 15px 15px 0 0;
+
+}
+@media only screen and (min-width: 768px) {
+  /* for screens larger than 768px */
+  .card {
+    width: 290px;
+    height: 575px;
+  }
+
+  .card-image {
+    height: 500px;
+  }
+}
+.car1{
+ background-image: url(tshirt-23.jpg);
+}
+.car2{
+  background-image: url(rollerball.jpg);
+ }
+ .car3{
+  background-image: url(warriors.jpg);
+ }
+ footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 0px;
+  text-align: center;
+}
